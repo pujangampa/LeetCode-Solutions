@@ -1,1 +1,2 @@
-# FAQ in FAANG
+# FAQ in FAANG Companies
+
