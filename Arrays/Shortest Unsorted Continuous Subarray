@@ -1,0 +1,11 @@
+s=sorted(nums)
+        if nums==s:
+                return 0
+        l=0
+        r=len(nums)-1
+        for i in range(len(nums)):
+            if nums[l]==s[l]:
+                l+=1
+            if nums[r]==s[r]:
+                r-=1
+        return r-l+1
