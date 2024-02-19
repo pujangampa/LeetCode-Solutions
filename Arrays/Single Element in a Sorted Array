@@ -1,0 +1,12 @@
+l=0
+r=len(a)-1
+
+while l<r:
+  m=(l+r)//2
+  if m%2==0:
+    m-=1
+  if a[m]!=a[m+1]:
+    r=m
+  else:
+    l=m+2
+return a[l]
