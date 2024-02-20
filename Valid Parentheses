@@ -1,0 +1,16 @@
+s=[]
+for i in a:
+  if i=='(' or i=='{' or i=='[':
+    s.append(i)
+  else:
+    if not s:
+      return False
+    elif i==')' and s[-1]=='(':
+      s.pop()
+    elif i=='}' and s[-1]=='{':
+      s.pop()
+    elif i==']' and s[-1]=='[':
+      s.pop()
+    else:
+      return False
+return not s
