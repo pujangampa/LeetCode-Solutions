@@ -1,0 +1,14 @@
+	l=0
+	r=len(a)-1
+	while l<r:
+		if a[l]==a[r]:
+			l+=1
+			r-=1
+		else:
+			p1=a[l+1:r+1]
+			p2=a[l:r]
+			if p1==p1[::-1] or p2==p2[::-1]:
+				return True
+			else:
+				return False
+	return True
