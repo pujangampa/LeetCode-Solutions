@@ -1,0 +1,7 @@
+a=''
+	for i in range(len(b)):
+		for j in range(i+1+len(a), len(b)+1):
+			w=b[i:j]
+			if w==w[::-1]:
+				a=w
+	return a
