@@ -1,0 +1,12 @@
+a='a4b5c6'
+
+b=[]
+for i in a:
+	if i.isdigit():
+		b.append(b[-1]*int(i))
+		b.pop(-2)
+	else:
+		b.append(i)
+print(''.join(b))
+
+#output:aaaabbbbbcccccc
