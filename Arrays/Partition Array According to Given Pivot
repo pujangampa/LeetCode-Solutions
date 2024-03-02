@@ -1,0 +1,9 @@
+        e,s,g=[],[],[]
+        for i in nums:
+            if i==pivot:
+                e.append(i)
+            elif i<pivot:
+                s.append(i)
+            else:
+                g.append(i)
+        return s+e+g
