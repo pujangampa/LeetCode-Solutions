@@ -1,0 +1,10 @@
+first_occurrence = -1
+last_occurrence = -1
+
+for i in range(n):
+    if arr[i] == x:
+        if first_occurrence == -1:
+            first_occurrence = i
+        last_occurrence = i
+
+return [first_occurrence, last_occurrence]
