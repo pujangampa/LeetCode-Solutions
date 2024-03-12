@@ -1,0 +1,12 @@
+s = 0
+m = float('inf')
+c = 0
+for i in range(n):
+    c += a[i]
+    while c > x:
+        m = min(m, i - s + 1)  # Update minimum length by (current index - start index + 1)
+        c -= a[s]
+        s += 1
+if m == float('inf'):
+    return 0
+return m
